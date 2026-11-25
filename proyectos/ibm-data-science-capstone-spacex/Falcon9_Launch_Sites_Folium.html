@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5f1b4bf46d75df698ccd8134e3e4b5dd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5f1b4bf46d75df698ccd8134e3e4b5dd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5f1b4bf46d75df698ccd8134e3e4b5dd = L.map(
+                "map_5f1b4bf46d75df698ccd8134e3e4b5dd",
+                {
+                    center: [36.0, -99.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6b1f4b4caf57cdb83fb8b4558c027104 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6b1f4b4caf57cdb83fb8b4558c027104.addTo(map_5f1b4bf46d75df698ccd8134e3e4b5dd);
+        
+    
+            var circle_marker_8cafeba1820e3374349378af3f77d780 = L.circleMarker(
+                [28.5618571, -80.577366],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_5f1b4bf46d75df698ccd8134e3e4b5dd);
+        
+    
+        var popup_3dddf2daf702283221ae04b809b4f8d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_513deb58957c8a4cb2cf0be68c25f704 = $(`<div id="html_513deb58957c8a4cb2cf0be68c25f704" style="width: 100.0%; height: 100.0%;">CCAFS SLC 40: 33/55 successful</div>`)[0];
+                popup_3dddf2daf702283221ae04b809b4f8d6.setContent(html_513deb58957c8a4cb2cf0be68c25f704);
+            
+        
+
+        circle_marker_8cafeba1820e3374349378af3f77d780.bindPopup(popup_3dddf2daf702283221ae04b809b4f8d6)
+        ;
+
+        
+    
+    
+            circle_marker_8cafeba1820e3374349378af3f77d780.bindTooltip(
+                `<div>
+                     CCAFS SLC 40 | 60.0% successful
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_90f97cc7964582370dcf28b8208ad006 = L.circleMarker(
+                [34.632093, -120.610829],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_5f1b4bf46d75df698ccd8134e3e4b5dd);
+        
+    
+        var popup_d477399e7a572329fe71cdc01d47a987 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e2286fe09631c196c873681d1207947 = $(`<div id="html_9e2286fe09631c196c873681d1207947" style="width: 100.0%; height: 100.0%;">VAFB SLC 4E: 10/13 successful</div>`)[0];
+                popup_d477399e7a572329fe71cdc01d47a987.setContent(html_9e2286fe09631c196c873681d1207947);
+            
+        
+
+        circle_marker_90f97cc7964582370dcf28b8208ad006.bindPopup(popup_d477399e7a572329fe71cdc01d47a987)
+        ;
+
+        
+    
+    
+            circle_marker_90f97cc7964582370dcf28b8208ad006.bindTooltip(
+                `<div>
+                     VAFB SLC 4E | 76.9% successful
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9869e0a33d14ba9e185b661b7ac9746e = L.circleMarker(
+                [28.6080585, -80.6039558],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_5f1b4bf46d75df698ccd8134e3e4b5dd);
+        
+    
+        var popup_5c88ab74cce0571b25271c17213fff28 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_24a2086cd3b71e4832a102d25462241b = $(`<div id="html_24a2086cd3b71e4832a102d25462241b" style="width: 100.0%; height: 100.0%;">KSC LC 39A: 17/22 successful</div>`)[0];
+                popup_5c88ab74cce0571b25271c17213fff28.setContent(html_24a2086cd3b71e4832a102d25462241b);
+            
+        
+
+        circle_marker_9869e0a33d14ba9e185b661b7ac9746e.bindPopup(popup_5c88ab74cce0571b25271c17213fff28)
+        ;
+
+        
+    
+    
+            circle_marker_9869e0a33d14ba9e185b661b7ac9746e.bindTooltip(
+                `<div>
+                     KSC LC 39A | 77.3% successful
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
