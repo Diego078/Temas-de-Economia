@@ -1,0 +1,244 @@
+{
+  "n_model": 90,
+  "success_n": 60,
+  "success_rate": 0.6667,
+  "site": [
+    {
+      "LaunchSite": "CCAFS SLC 40",
+      "n": 55,
+      "success": 33,
+      "rate": 0.6,
+      "mass": 5548.218181818182
+    },
+    {
+      "LaunchSite": "VAFB SLC 4E",
+      "n": 13,
+      "success": 10,
+      "rate": 0.7692307692307693,
+      "mass": 5919.461538461538
+    },
+    {
+      "LaunchSite": "KSC LC 39A",
+      "n": 22,
+      "success": 17,
+      "rate": 0.7727272727272727,
+      "mass": 7606.454545454545
+    }
+  ],
+  "year": [
+    {
+      "Year": 2010,
+      "n": 1,
+      "success": 0,
+      "rate": 0.0
+    },
+    {
+      "Year": 2012,
+      "n": 1,
+      "success": 0,
+      "rate": 0.0
+    },
+    {
+      "Year": 2013,
+      "n": 3,
+      "success": 0,
+      "rate": 0.0
+    },
+    {
+      "Year": 2014,
+      "n": 6,
+      "success": 2,
+      "rate": 0.3333333333333333
+    },
+    {
+      "Year": 2015,
+      "n": 6,
+      "success": 2,
+      "rate": 0.3333333333333333
+    },
+    {
+      "Year": 2016,
+      "n": 8,
+      "success": 5,
+      "rate": 0.625
+    },
+    {
+      "Year": 2017,
+      "n": 18,
+      "success": 15,
+      "rate": 0.8333333333333334
+    },
+    {
+      "Year": 2018,
+      "n": 18,
+      "success": 11,
+      "rate": 0.6111111111111112
+    },
+    {
+      "Year": 2019,
+      "n": 10,
+      "success": 9,
+      "rate": 0.9
+    },
+    {
+      "Year": 2020,
+      "n": 19,
+      "success": 16,
+      "rate": 0.8421052631578947
+    }
+  ],
+  "orbit": [
+    {
+      "Orbit": "PO",
+      "n": 27,
+      "success": 14,
+      "rate": 0.5185185185185185
+    },
+    {
+      "Orbit": "ISS",
+      "n": 21,
+      "success": 13,
+      "rate": 0.6190476190476191
+    },
+    {
+      "Orbit": "ES-L1",
+      "n": 14,
+      "success": 12,
+      "rate": 0.8571428571428571
+    },
+    {
+      "Orbit": "GTO",
+      "n": 9,
+      "success": 6,
+      "rate": 0.6666666666666666
+    },
+    {
+      "Orbit": "LEO",
+      "n": 7,
+      "success": 5,
+      "rate": 0.7142857142857143
+    },
+    {
+      "Orbit": "SSO",
+      "n": 5,
+      "success": 5,
+      "rate": 1.0
+    },
+    {
+      "Orbit": "HEO",
+      "n": 3,
+      "success": 2,
+      "rate": 0.6666666666666666
+    },
+    {
+      "Orbit": "GEO",
+      "n": 1,
+      "success": 1,
+      "rate": 1.0
+    },
+    {
+      "Orbit": "MEO",
+      "n": 1,
+      "success": 1,
+      "rate": 1.0
+    },
+    {
+      "Orbit": "SO",
+      "n": 1,
+      "success": 0,
+      "rate": 0.0
+    },
+    {
+      "Orbit": "VLEO",
+      "n": 1,
+      "success": 1,
+      "rate": 1.0
+    }
+  ],
+  "model_comparison": [
+    {
+      "model": "Logistic regression",
+      "cv_accuracy": 0.85,
+      "accuracy": 0.833,
+      "precision": 0.8,
+      "recall": 1.0,
+      "f1": 0.889,
+      "parameters": {
+        "clf__C": 1
+      }
+    },
+    {
+      "model": "SVM (RBF)",
+      "cv_accuracy": 0.835,
+      "accuracy": 0.833,
+      "precision": 0.8,
+      "recall": 1.0,
+      "f1": 0.889,
+      "parameters": {
+        "clf__C": 1,
+        "clf__gamma": "scale"
+      }
+    },
+    {
+      "model": "Decision tree",
+      "cv_accuracy": 0.864,
+      "accuracy": 0.833,
+      "precision": 0.8,
+      "recall": 1.0,
+      "f1": 0.889,
+      "parameters": {
+        "clf__max_depth": 3,
+        "clf__min_samples_leaf": 3
+      }
+    },
+    {
+      "model": "K-nearest neighbors",
+      "cv_accuracy": 0.878,
+      "accuracy": 0.611,
+      "precision": 0.778,
+      "recall": 0.583,
+      "f1": 0.667,
+      "parameters": {
+        "clf__n_neighbors": 5,
+        "clf__weights": "uniform"
+      }
+    }
+  ],
+  "best_model": "Decision tree",
+  "best_cm": [
+    [
+      3,
+      3
+    ],
+    [
+      0,
+      12
+    ]
+  ],
+  "best_test_n": 18,
+  "time_split": {
+    "train_n": 61,
+    "test_n": 29,
+    "train_success_rate": 0.574,
+    "test_success_rate": 0.862,
+    "accuracy": 0.931,
+    "precision": 0.926,
+    "recall": 1.0,
+    "f1": 0.962
+  },
+  "data_source": "https://github.com/liam-stuart/Applied-Data-Science-Capstone/blob/main/dataset_part_2.csv",
+  "sql_source": "https://github.com/liam-stuart/Applied-Data-Science-Capstone/blob/main/Spacex.csv",
+  "sql_record_count": 101,
+  "sql_sites_collapsed": {
+    "Cape Canaveral": 60,
+    "Kennedy Space Center": 25,
+    "Vandenberg": 16
+  },
+  "sql_landing_success_text": 61,
+  "notes": [
+    "The model dataset is a compact reconstruction of 90 original rows with payload masses rounded to the nearest kg.",
+    "The 101-row SQL dataset is a distinct IBM lab data extract; these denominators are not interchangeable.",
+    "Launch-site and orbit rate comparisons are descriptive only; small samples and temporal confounding limit causal interpretation.",
+    "The dashboard figure is a reconstructed preview, not a screenshot of a live Dash app."
+  ]
+}
